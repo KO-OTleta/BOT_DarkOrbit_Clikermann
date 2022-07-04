@@ -1,0 +1,112 @@
+GETSCREEN  /// \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -=1=-
+IF_PICTURE_IN (0,0, $_xmax,$_ymax, "kamik.bmp", -1, 95)    //kamikadze
+   LCLICK($_return1+rnd(1,40), $_return2+rnd(3,10))
+   waitms(2000)
+END_IF
+wait(2)
+waitms(500)
+waitms(300)
+waitms(500)
+wait(1)
+wait(6)
+GETSCREEN
+IF_PICTURE_IN (0,0,$_xmax,$_ymax, "pet.bmp", -1, 95)
+   $c1=$_return1
+   $c2=$_return2
+end_if
+LCLICK($c1+rnd(10,30),$c2+rnd(100,120)) // rem pet        (2)
+waitms(500)
+KEYPRESS(#0)        //shld(2)
+waitms(300)
+//KEYPRESS(#4)      //rem (2)
+waitms(500)
+LCLICK($c1+rnd(10,30),$c2+rnd(100,120)) // rem pet        (2)
+wait(1)
+KEYPRESS(#R)
+LCLICK($c1+rnd(130,160),$c2+rnd(105,115))     //mexanizmy    (2)
+wait(1)
+wait(15)
+GETSCREEN  /// \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -=2=-
+IF_PICTURE_IN (0,0, $_xmax,$_ymax, "kamik.bmp", -1, 95)    //kamikadze
+   LCLICK($_return1+rnd(1,40), $_return2+rnd(3,10))
+   waitms(2000)
+END_IF
+wait(2)
+waitms(500)
+waitms(300)
+waitms(500)
+wait(1)
+wait(6)
+GETSCREEN
+IF_PICTURE_IN (0,0,$_xmax,$_ymax, "pet.bmp", -1, 95)
+   $c1=$_return1
+   $c2=$_return2
+end_if
+LCLICK($c1+rnd(10,30),$c2+rnd(100,120)) // rem pet        (2)
+waitms(500)
+KEYPRESS(#0)        //shld(2)
+waitms(300)
+KEYPRESS(#9)      //rem (2)
+waitms(500)
+LCLICK($c1+rnd(10,30),$c2+rnd(100,120)) // rem pet        (2)
+wait(1)
+KEYPRESS(#R)
+LCLICK($c1+rnd(130,160),$c2+rnd(105,115))     //mexanizmy    (2)
+wait(1)
+wait(15)
+GETSCREEN  /// \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -=3=-
+IF_PICTURE_IN (0,0, $_xmax,$_ymax, "kamik.bmp", -1, 95)    //kamikadze
+   LCLICK($_return1+rnd(1,40), $_return2+rnd(3,10))
+   waitms(2000)
+END_IF
+wait(2)
+waitms(500)
+waitms(300)
+waitms(500)
+wait(1)
+wait(6)
+GETSCREEN
+IF_PICTURE_IN (0,0,$_xmax,$_ymax, "pet.bmp", -1, 95)
+   $c1=$_return1
+   $c2=$_return2
+end_if
+LCLICK($c1+rnd(10,30),$c2+rnd(100,120)) // rem pet        (2)
+waitms(500)
+KEYPRESS(#0)        //shld(2)
+waitms(300)
+KEYPRESS(#8)      //rem (2)
+waitms(500)
+LCLICK($c1+rnd(10,30),$c2+rnd(100,120)) // rem pet        (2)
+wait(1)
+KEYPRESS(#R)
+LCLICK($c1+rnd(130,160),$c2+rnd(105,115))     //mexanizmy    (2)
+wait(1)
+wait(15)
+GETSCREEN  /// \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -=4=-
+IF_PICTURE_IN (0,0, $_xmax,$_ymax, "kamik.bmp", -1, 95)    //kamikadze
+   LCLICK($_return1+rnd(1,40), $_return2+rnd(3,10))
+   waitms(2000)
+END_IF
+wait(2)
+waitms(500)
+waitms(300)
+waitms(500)
+wait(1)
+wait(6)
+GETSCREEN
+IF_PICTURE_IN (0,0,$_xmax,$_ymax, "pet.bmp", -1, 95)
+   $c1=$_return1
+   $c2=$_return2
+end_if
+LCLICK($c1+rnd(10,30),$c2+rnd(100,120)) // rem pet        (2)
+waitms(500)
+KEYPRESS(#0)        //shld(2)
+waitms(300)
+//KEYPRESS(#4)      //rem (2)
+waitms(500)
+LCLICK($c1+rnd(10,30),$c2+rnd(100,120)) // rem pet        (2)
+wait(1)
+KEYPRESS(#R)
+LCLICK($c1+rnd(130,160),$c2+rnd(105,115))     //mexanizmy    (2)
+wait(1)
+wait(15)
