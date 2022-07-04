@@ -1,0 +1,422 @@
+$h = hget($_xmouse,$_ymouse)
+wndgetinfo($h,$var1,$var2,$var3,$var4)
+DEFINE($rem,1)
+$x0=$var1
+$xp=2548528
+$xm=$var1+$var3
+$y0=$var2
+$ym=$var2+$var4-75
+$x2=int($xm/2)
+$x4=int($xm/4)
+$y2=int($ym/2)
+$y4=int($ym/4)
+$color=15990783
+data:
+GETSCREEN
+IF_PICTURE_IN (0,0, $_xmax,$_ymax, "min.bmp", -1, 85)
+   $b1=$_return1
+   $b2=$_return2
+   WAITMS(100)
+else
+   KEYPRESS(#H)
+   wait(2)
+   GETSCREEN
+   IF_PICTURE_IN (0,0, $_xmax,$_ymax, "mof.bmp", -1,75)
+      LCLICK($_return1+rnd(2,10),$_return2+rnd(2,10))
+      wait(1)
+      goto(data)
+   else
+      $str = inputbox(" Minimap eror !", " ",3)
+      print($str)
+      halt
+   END_IF
+END_IF
+$txx=($b1+rnd(14,170))
+$tyy=($b2+rnd(48,70))
+$tx1=($b1+rnd(14,17))
+$ty1=($b2+rnd(48,51))
+$tx2=($b1+rnd(38,41))
+$ty2=($b2+rnd(48,51))
+$tx3=($b1+rnd(62,65))
+$ty3=($b2+rnd(48,51))
+$tx4=($b1+rnd(86,89))
+$ty4=($b2+rnd(48,51))
+$tx5=($b1+rnd(110,113))
+$ty5=($b2+rnd(48,51))
+$tx6=($b1+rnd(134,137))
+$ty6=($b2+rnd(48,51))
+$tx7=($b1+rnd(158,161))
+$ty7=($b2+rnd(48,51))
+$tx8=($b1+rnd(2,5))
+$ty8=($b2+rnd(73,76))
+$tx9=($b1+rnd(26,29))
+$ty9=($b2+rnd(73,76))
+$tx10=($b1+rnd(50,53))
+$ty10=($b2+rnd(73,76))
+$tx11=($b1+rnd(74,77))
+$ty11=($b2+rnd(73,76))
+$tx12=($b1+rnd(98,101))
+$ty12=($b2+rnd(73,76))
+$tx13=($b1+rnd(122,125))
+$ty13=($b2+rnd(73,76))
+$tx14=($b1+rnd(146,149))
+$ty14=($b2+rnd(73,76))
+$tx15=($b1+rnd(170,173))
+$ty15=($b2+rnd(73,76))
+$tx16=($b1+rnd(14,17))
+$ty16=($b2+rnd(98,101))
+$tx17=($b1+rnd(38,41))
+$ty17=($b2+rnd(98,101))
+$tx18=($b1+rnd(62,65))
+$ty18=($b2+rnd(98,101))
+$tx19=($b1+rnd(86,89))
+$ty19=($b2+rnd(98,101))
+$tx20=($b1+rnd(110,113))
+$ty20=($b2+rnd(98,101))
+$tx21=($b1+rnd(134,137))
+$ty21=($b2+rnd(98,101))
+$tx22=($b1+rnd(158,161))
+$ty22=($b2+rnd(98,101))
+$tx23=($b1+rnd(25,53))
+$ty23=($b2+rnd(123,126))
+$tx24=($b1+rnd(26,29))
+$ty24=($b2+rnd(123,126))
+$tx25=($b1+rnd(50,53))
+$ty25=($b2+rnd(123,126))
+$tx26=($b1+rnd(74,77))
+$ty26=($b2+rnd(123,126))
+$tx27=($b1+rnd(98,101))
+$ty27=($b2+rnd(123,126))
+$tx28=($b1+rnd(122,125))
+$ty28=($b2+rnd(123,126))
+$tx29=($b1+rnd(146,149))
+$ty29=($b2+rnd(123,126))
+$tx30=($b1+rnd(170,173))
+$ty30=($b2+rnd(123,126))
+$tx31=($b1+rnd(14,17))
+$ty31=($b2+rnd(148,151))
+$tx32=($b1+rnd(38,41))
+$ty32=($b2+rnd(148,151))
+$tx33=($b1+rnd(62,65))
+$ty33=($b2+rnd(148,151))
+$tx34=($b1+rnd(86,89))
+$ty34=($b2+rnd(148,151))
+$tx35=($b1+rnd(110,113))
+$ty35=($b2+rnd(148,151))
+$tx36=($b1+rnd(134,137))
+$ty36=($b2+rnd(148,151))
+$tx37=($b1+rnd(158,161))
+$ty37=($b2+rnd(148,151))
+SUB(check)
+   GETSCREEN
+   IF_PICTURE_IN (0,0, $_xmax,$_ymax, "404.bmp", -1,97)
+      LCLICK($_return1+98,$_return2+68)
+      fly:
+      GETSCREEN
+      IF_PICTURE_IN (0,0, $_xmax,$_ymax, "fly.bmp", -1,90)
+         wait(3)
+         goto(fly)
+      else
+         wait(1)
+         KEYPRESS(#J)
+      end_if
+   else
+      GETSCREEN
+      IF_PICTURE_IN (0,0, $_xmax,$_ymax, "VRU.bmp", -1,97)////       ÊÎÐÏÎÐÀÖ²ß
+         wait(1)
+         LCLICK($tx8,$ty8)
+         flyc:
+         GETSCREEN
+         IF_PICTURE_IN (0,0, $_xmax,$_ymax, "fly.bmp", -1,90)
+            wait(3)
+            goto(flyc)
+         else
+            wait(1)
+            KEYPRESS(#0)
+            wait(2)
+         end_if
+         GETSCREEN
+         IF_PICTURE_IN (0,0, $_xmax,$_ymax,rndfrom("304.bmp","303.bmp"), -1, 85)
+            LCLICK ($_return1+ rnd(5,20), $_return2+ rnd(5,20))
+            WAIT(rnd(2,4))
+         END_IF
+         GETSCREEN
+         IF_PICTURE_IN (0,0, $_xmax,$_ymax, "jamp.bmp", -1, 75)
+            LCLICK($_return1+rnd(20,30), $_return2+rnd(5,20))
+            WAITMS(rnd(11000,12500))
+         END_IF
+         GETSCREEN
+         IF_PICTURE_IN (0,0, $_xmax,$_ymax, "kartaon.bmp", -1, 75)
+            LCLICK($_return1+rnd(2,10), $_return2+rnd(2,10))
+            WAIT(rnd(1,4))
+         END_IF
+      END_IF
+   end_if
+END_SUB
+SUB(box)
+   DEFINE($c,1)
+   GETSCREEN
+   IF_PICTURE_IN (0,0, $_xmax,$_ymax, "mof.bmp", -1, 75)
+      LCLICK($_return1+rnd(2,10),$_return2+rnd(2,10))
+   end_if
+   $time = $_time_t + 2
+   WHILE($time > $_time_t)
+      p:
+      if($c>30)
+         LCLICK($b1+rnd(90,110),$b2+rnd(90,110))
+         wait(5)
+         UNDEFINE($c)
+      end_if
+      DEFINE($data,25)
+      DEFINE($t,0.55)
+      GETSCREEN
+      IF_PIXEL_IN($x2-$data,$y2,$x2+$data,$y2+$data,$color)
+         $time = $_time_t+$t+0.2
+         LCLICK($_return1+rnd(1,5),$_return2+rnd(1,5))
+         wait($t)
+         UNDEFINE($data)
+         UNDEFINE($t)
+         INC($c,1)
+         goto(p)
+      else
+         IF_PIXEL_IN($x2-$data,$y2-$data,$x2+$data,$y2+$data,$color)
+            $time = $_time_t+$t+0.2
+            LCLICK($_return1+rnd(1,5),$_return2+rnd(1,5))
+            wait($t)
+            UNDEFINE($data)
+            UNDEFINE($t)
+            INC($c,1)
+            goto(p)
+         else
+            if($data<$y2)
+               INC($data,70)
+               INC($t,0.1)
+               goto(p)
+            else
+               GETSCREEN
+               IF_PIXEL_IN($x4,$y4,$xm-$x4,$ym-$y4,$color)
+                  $time = $_time_t+$t+0.2
+                  LCLICK($_return1+rnd(1,5),$_return2+rnd(1,5))
+                  wait($t)
+                  UNDEFINE($data)
+                  UNDEFINE($t)
+                  INC($c,1)
+                  goto(p)
+               else
+                  IF_PIXEL_IN($x0+50,$y0+50,$xm-50,$ym-50,$color)
+                     $time = $_time_t+$t+0.2
+                     LCLICK($_return1+rnd(1,5),$_return2+rnd(1,5))
+                     wait($t)
+                     UNDEFINE($data)
+                     UNDEFINE($t)
+                     INC($c,1)
+                     goto(p)
+                  else
+                     UNDEFINE($data)
+                     UNDEFINE($t)
+                  END_IF
+               END_IF
+            END_IF
+         END_IF
+      END_IF
+   end_cyc
+   UNDEFINE($c)
+   KEYPRESS(#6)
+END_SUB
+SUB(pet)
+   KEYPRESS(#5)
+      GETSCREEN
+      IF_PICTURE_IN (0,0, $_xmax,$_ymax, "petzakrutuy.bmp", -1, 75)
+         LCLICK($_return1+rnd(2,10), $_return2+rnd(2,10))
+         WAITMS(rnd(1100,1600))
+      END_IF
+      GETSCREEN
+      IF_PICTURE_IN (0,0, $_xmax,$_ymax, "petrem.bmp", -1, 85)
+         LCLICK($_return1+rnd(2,10), $_return2+rnd(2,10))
+         WAITMS(rnd(300,600))
+      END_IF
+      GETSCREEN
+      IF_PICTURE_IN (0,0, $_xmax,$_ymax, "petplay.bmp", -1,85)
+         LCLICK($_return1+rnd(2,10), $_return2+rnd(2,10))
+         waitms(rnd(300,500))
+      END_IF
+      GETSCREEN
+      IF_PICTURE_IN (0,0,$_xmax,$_ymax, "petmexanizm.bmp", -1, 85)
+         LCLICK($_return1+rnd(2,10), $_return2+rnd(2,10))
+         WAITMS(rnd(300,500))
+      END_IF
+      GETSCREEN
+      IF_PICTURE_IN (0,0,$_xmax,$_ymax, "box.bmp", -1, 85)
+         LCLICK($_return1+rnd(4,10), $_return2+rnd(2,10))
+         WAITMS(rnd(300,500))
+      END_IF
+   END_IF
+end_sub
+SUB(rem)
+   GETSCREEN
+   IF_PICTURE_IN (0,0,$_xmax,$_ymax, "zboy.bmp", -1, 85)
+      LCLICK($_return1+rnd(2,10), $_return2+rnd(2,10))
+      WAIT(rnd(5,9))
+   else
+      waitms(10)
+   end_if
+   GETSCREEN
+   IF_PICTURE_IN (0,0,$_xmax,$_ymax, "rem.bmp", -1, 85)
+      LCLICK($_return1+rnd(2,10), $_return2+rnd(2,10))
+      WAIT(rnd(25,30))
+      INC($rem,1)
+      if($rem>15)
+         KEYPRESS(#L)
+         halt
+      end_if
+      $str = inputbox("Waiting...", "", rnd(250,300))
+      wait(1)
+      KEYPRESS(#0)
+      wait(2)
+      GETSCREEN
+      //---------------------------
+      //========== KAPTA ==========
+      //---------------------------
+      if($rem<10)
+         IF_PICTURE_IN (0,0,$_xmax,$_ymax, rndfrom("304.bmp","303.bmp"), -1,85)
+            LCLICK($_return1+rnd(5,20), $_return2+rnd(5,20))
+            WAIT(rnd(2,4))
+         END_IF
+      else
+         halt
+      end_if
+      GETSCREEN
+      IF_PICTURE_IN (0,0,$_xmax,$_ymax, "jamp.bmp", -1, 85)
+         LCLICK($_return1+rnd(5,20), $_return2+rnd(5,20))
+         WAITMS(rnd(700,800))
+      END_IF
+      GETSCREEN
+      IF_PICTURE_IN (0,0,$_xmax,$_ymax, "kartaon.bmp", -1, 75)
+         LCLICK($_return1+rnd(2,10), $_return2+rnd(2,10))
+         WAIT(rnd(1,4))
+      END_IF
+   else
+      waitms(10)
+   END_IF
+end_sub
+LCLICK($tx8,$ty8)
+rem()                   //rem
+LCLICK($txx,$ty8)
+check()                   //CHEcK
+box()
+LCLICK($tx1,$ty1)
+pet()                   //PET
+box()
+LCLICK($tx9,$ty9)
+box()
+LCLICK($txx,$tyy)
+box()
+LCLICK($tx10,$ty10)
+box()
+LCLICK($tx3,$ty3)
+box()
+LCLICK($tx11,$ty11)
+box()
+LCLICK($tx4,$ty4)
+box()
+LCLICK($txx,$tyy)
+box()
+LCLICK($tx5,$ty5)
+box()
+LCLICK($tx13,$ty13)
+box()
+LCLICK($tx6,$ty6)
+box()
+LCLICK($tx14,$ty14)
+box()
+LCLICK($tx7,$ty7)
+box()
+LCLICK($tx15,$ty15)
+box()
+LCLICK($tx22,$ty22)
+box()
+LCLICK($txx,$ty30)
+box()
+LCLICK($tx37,$ty37)
+box()
+LCLICK($tx29,$tyy)
+box()
+LCLICK($tx36,$ty36)
+box()
+LCLICK($tx28,$ty28)
+box()
+LCLICK($tx35,$ty35)
+box()
+LCLICK($txx,$ty27)
+box()
+LCLICK($tx34,$ty34)
+box()
+LCLICK($tx26,$ty26)
+box()
+LCLICK($tx33,$tyy)
+box()
+LCLICK($tx25,$ty25)
+box()
+LCLICK($tx32,$ty32)
+box()
+LCLICK($tx24,$ty24)
+box()
+LCLICK($txx,$ty31)
+box()
+LCLICK($tx23,$ty23)
+box()
+LCLICK($tx16,$ty16)
+rem()                   //rem
+box()
+LCLICK($tx24,$tyy)
+check()                   //CHEcK
+box()
+LCLICK($tx17,$ty17)
+pet()                   //PET
+box()
+LCLICK($tx25,$ty25)
+box()
+LCLICK($tx18,$ty18)
+box()
+LCLICK($tx26,$ty26)
+box()
+LCLICK($tx19,$ty19)
+box()
+LCLICK($txx,$ty27)
+box()
+LCLICK($tx20,$ty20)
+box()
+LCLICK($tx28,$ty28)
+box()
+LCLICK($tx21,$ty21)
+box()
+LCLICK($tx29,$ty29)
+box()
+LCLICK($tx22,$tyy)
+box()
+LCLICK($tx14,$ty14)
+box()
+LCLICK($tx21,$ty21)
+box()
+LCLICK($tx13,$ty13)
+box()
+LCLICK($txx,$ty20)
+box()
+LCLICK($tx12,$ty12)
+box()
+LCLICK($tx19,$ty19)
+box()
+LCLICK($tx11,$tyy)
+box()
+LCLICK($tx18,$ty18)
+box()
+LCLICK($tx10,$ty10)
+box()
+LCLICK($txx,$ty17)
+box()
+LCLICK($tx9,$ty9)
+box()
+LCLICK($tx16,$ty16)
+box()
+LCLICK($tx8,$ty)
+box()
